@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/styleNew.css">
+    <title>Landing Page</title>
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <img src="/image/logo.jpg" alt="Logo" class="logo">
+        <nav>
+            <div class="menu-hamburguer" onclick="toggleMenu()">☰</div>
+            <ul id="menu">
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#compra">Compre Já</a></li>
+                <li><a href="#saibamais">Saiba Mais</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção principal com imagem e texto -->
+    <section class="main-section">
+        <div class="content">
+            <h1>SonusWave Pro – Som Imersivo e Conforto Superior</h1>
+            <p>Descubra o poder do som com o SonusWave Pro. Equipado com tecnologia de cancelamento de ruído avançada e
+                drivers de alta definição,
+                este fone de ouvido oferece uma experiência auditiva incomparável, com graves profundos e agudos
+                cristalinos. Projetado para máximo conforto,
+                o SonusWave Pro possui almofadas de ouvido macias e uma estrutura leve que garante horas de uso sem
+                incômodo. Com bateria de longa duração e conectividade sem fio,
+                é o companheiro ideal para trabalho, lazer ou exercícios. Eleve sua experiência sonora para o próximo
+                nível com o SonusWave Pro!</p>
+            <button id="compra" onclick="openModal()">Compre Já o Seu</button>
+        </div>
+        <img src="/image/fone.jpg" alt="Imagem principal" id="fone-img">
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">×</span>
+            <h2>Finalizar Compra</h2>
+            <div class="product-info">
+                <img src="/image/fone.jpg" alt="Produto">
+                <div>
+                    <p><strong>Nome do Produto:</strong> SonusWave Pro</p>
+                    <label for="quantity">Quantidade:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    <label for="payment">Forma de Pagamento:</label>
+                    <select id="payment" name="payment">
+                        <option value="cartao">Cartão de Crédito</option>
+                        <option value="boleto">Boleto Bancário</option>
+                        <option value="pix">PIX</option>
+                    </select>
+                </div>
+            </div>
+            <form id="purchase-form">
+                <input type="text" placeholder="Nome Completo" required>
+                <input type="tel" placeholder="Telefone" required>
+                <input type="email" placeholder="Email" required>
+                <button type="submit" class="buy-button">Comprar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Seção de depoimentos -->
+    <section class="testimonials">
+        <h2>Depoimentos de Clientes</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <img src="/image/homen-1.jpg" alt="imagem-depoimento1">
+                <p>"O SonusWave Pro é incrível! A qualidade do som é excepcional e o conforto é incomparável. Super
+                    recomendado!"</p>
+            </div>
+            <div class="testimonial">
+                <img src="/image/homen-2.jpg" alt="imagem-depoimento2">
+                <p>"Este fone superou todas as minhas expectativas. A tecnologia de cancelamento de ruído é fantástica.
+                    Eu definitivamente compraria novamente!"</p>
+            </div>
+            <div class="testimonial">
+                <img src="/image/mulher.jpg" alt="imagem-depoimento3">
+                <p>"A qualidade do SonusWave Pro é impressionante. Nunca experimentei algo assim antes. Vale cada
+                    centavo!"</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de contato -->
+    <section class="contact" id="contato">
+        <h2>Fale Conosco</h2>
+        <form>
+            <input type="text" placeholder="Seu nome" required>
+            <input type="email" placeholder="Seu email" required>
+            <textarea placeholder="Sua mensagem" rows="4" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <!-- Seção Saiba Mais -->
+    <section class="about" id="saibamais">
+        <h2>Saiba Mais sobre o SonusWave Pro</h2>
+        <p>O SonusWave Pro foi desenvolvido para proporcionar uma experiência auditiva de alta qualidade, com tecnologia
+            de cancelamento de ruído e uma estrutura ergonômica. Seu design moderno e confortável permite o uso
+            prolongado sem desconforto, seja para trabalho, exercícios ou lazer. A bateria de longa duração e a
+            conectividade sem fio tornam este fone de ouvido o companheiro ideal para qualquer ocasião.</p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2024 Sua Empresa. Todos os direitos reservados.</p>
+    </footer>
+    <script src="/Js/script.js"></script>
+</body>
+
+</html>

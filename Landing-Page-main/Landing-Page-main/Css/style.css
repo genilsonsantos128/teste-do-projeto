@@ -1,0 +1,167 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #94a2cf, rgb(9, 59, 151));
+}
+
+/* Estilo do cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* Estilo do logo */
+.logo {
+  margin-left: 20px;
+  height: 50px;
+  width: 50px;
+}
+
+/* Estilo do menu */
+nav {
+  margin-right: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Seção principal */
+.main-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  height: 400px;
+}
+
+.main-section img {
+  width: 300px;
+  height: auto;
+  margin-left: 40px;
+}
+
+.main-section .content {
+  max-width: 500px;
+}
+
+.main-section .content h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.main-section .content p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Estilo do botão */
+.main-section .content button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Seção de depoimentos */
+.testimonials {
+  padding: 40px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.testimonials h2 {
+  margin-bottom: 20px;
+}
+
+.testimonials .testimonial-container {
+  display: flex; /* Layout horizontal */
+  justify-content: space-around;
+  align-items: center;
+}
+
+.testimonials .testimonial {
+  margin: 0 20px;
+}
+
+.testimonials img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%; /* Tornar a imagem redonda */
+}
+
+/* Seção de contato */
+.contact {
+  padding: 40px;
+  background-color: #e0e0e0;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact form input, .contact form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact form button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Seção Saiba Mais */
+.about {
+  padding: 40px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.about h2 {
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* Estilo do rodapé */
+footer {
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}

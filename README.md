@@ -26,7 +26,7 @@
     <p>Para começar a trabalhar com este projeto, siga as etapas abaixo:</p>
     <ol>
         <li>Clone este repositório:</li>
-        <pre><code>git clone https://github.com/usuario/projeto-landing-page.git</code></pre>
+        <pre><code>git clone https://github.com/genilsonsantos128/teste-do-projeto.git</code></pre>
         <li>Abra o projeto no Visual Studio.</li>
         <li>Certifique-se de que você tenha a extensão <strong>Open Live Server</strong> instalada no Visual Studio.</li>
         <li>Para iniciar o servidor e visualizar o projeto, clique com o botão direito no arquivo <code>index.html</code> e selecione <strong>Open with Live Server</strong>.</li>
